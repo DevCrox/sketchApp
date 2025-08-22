@@ -1,21 +1,23 @@
 html {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+  justify-content: center;
+
 }
 
 .container {
-  display: grid;
-  grid-template-columns: repeat(16, 1fr); /* 16 boxes per row */
-  width: 600px; /* set overall grid width */
+  display: flex;
+  width: 450px;
+  flex-wrap: wrap;
+  border: 1px solid #b9b9b9;
 }
 
 .container div {
-  background-color: lightgray;
-  border: 1px solid #ccc; /* optional, helps visualize */
+  background-color: rgb(255, 255, 255);
+  border: 0px solid #ffffff; /* optional, helps visualize */
   display: flex;
   align-items: center;
   justify-content: center;
-	aspect-ratio: 1 / 1;
+  flex: 0 0 calc(100% / var(--grid-size));
+  aspect-ratio: 1 / 1;
   font-size: 20px;
 }
